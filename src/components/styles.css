@@ -143,3 +143,94 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+.form-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input, select {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.register-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-button:hover {
+    background-color: #218838;
+}
+
+.pass-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 100%;
+}
+/* parking pass stylings */
+
+.button-group {
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
+    justify-content: center;
+    gap: 20px; /* More spacing between buttons */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
+}
+
+.pass-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    min-width: 150px;
+    text-align: center;
+}
+
+.daily {
+    background-color: #f39c12;
+    color: white;
+}
+
+.monthly {
+    background-color: #3498db;
+    color: white;
+}
+
+.yearly {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.pass-button:hover {
+    opacity: 0.85;
+    transform: scale(1.08);
+}
+
+/* Ensure proper visibility on all screen sizes */
+@media screen and (max-width: 600px) {
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 15px;
+    }
+
+    .pass-button {
+        width: 100%; /* Make buttons full width on small screens */
+    }
+}

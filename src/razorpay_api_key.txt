@@ -1,0 +1,2 @@
+api key razorpay for testing:
+api_key = 'rzp_test_a5Mdk9NZ5w5mUE'

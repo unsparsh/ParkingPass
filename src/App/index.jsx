@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { Pass } from "../components/Pass";
+import { Pass } from "../components/Pass";
 import { User } from "../components/User";
 import { Vehicle } from "../components/Vehicle";
 import "../components/styles.css";
@@ -13,7 +13,7 @@ function App() {
         <>
             <User users={users} setUsers={setUsers} />
             <Vehicle users={users} vehicles={vehicles} setVehicles={setVehicles} />
-            {/* <Pass /> */}
+            <Pass />
         </>
     );
 }
